@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_drawer"
+    app:startDestination="@id/easyRememberPasswordFragment">
+    <fragment
+        android:id="@+id/easyRememberPasswordFragment"
+        android:name="com.example.passwordproject.easy.EasyRememberPasswordFragment"
+        android:label="fragment_easy_remember_password"
+        tools:layout="@layout/fragment_easy_remember_password" />
+    <fragment
+        android:id="@+id/encryptionToolFragment"
+        android:name="com.example.passwordproject.fragments.EncryptionToolFragment"
+        android:label="fragment_encryption_tool"
+        tools:layout="@layout/fragment_encryption_tool" />
+    <fragment
+        android:id="@+id/guidanceFragment2"
+        android:name="com.example.passwordproject.fragments.GuidanceFragment"
+        android:label="fragment_guidance"
+        tools:layout="@layout/fragment_guidance" />
+    <fragment
+        android:id="@+id/hashToolsFragment"
+        android:name="com.example.passwordproject.fragments.HashToolsFragment"
+        android:label="fragment_hash_tools"
+        tools:layout="@layout/fragment_hash_tools" />
+    <fragment
+        android:id="@+id/PINWordFragment"
+        android:name="com.example.passwordproject.fragments.PINWordFragment"
+        android:label="fragment_p_i_n_word"
+        tools:layout="@layout/fragment_p_i_n_word" />
+    <fragment
+        android:id="@+id/strengthDetactionFragment"
+        android:name="com.example.passwordproject.fragments.StrengthDetactionFragment"
+        android:label="fragment_strength_detaction"
+        tools:layout="@layout/fragment_strength_detaction" />
+    <fragment
+        android:id="@+id/strongPasswordFragment"
+        android:name="com.example.passwordproject.fragments.StrongPasswordFragment"
+        android:label="fragment_strong_password"
+        tools:layout="@layout/fragment_strong_password" />
+</navigation>

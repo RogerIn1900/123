@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fragment_encryption_tool"
+    tools:context=".fragments.EncryptionToolFragment">
+
+
+    <TextView
+        android:id="@+id/txt_inputPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/txt_groupName_encryptionTool_inputPassword"
+        android:textColor="@color/light_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/etxt_inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/background_light_txt"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:textColorHint="@color/light_warm"
+        app:layout_constraintStart_toStartOf="@+id/txt_inputPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_inputPassword2" />
+
+    <TextView
+        android:id="@+id/txt_TripleDES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroung_dark_button"
+        android:padding="8dp"
+        android:text="TripleDES"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_AES"
+        app:layout_constraintStart_toEndOf="@+id/txt_AES"
+        app:layout_constraintTop_toTopOf="@+id/txt_AES" />
+
+    <TextView
+        android:id="@+id/txt_AES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_light_button"
+        android:padding="8dp"
+        android:text="AES"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txt_groupName_encryptionTool_button"
+        android:textColor="@color/light_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_inputPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/txt_groupName_encryptionTool_inputPassword"
+        android:textColor="@color/light_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_AES"
+        app:layout_constraintTop_toBottomOf="@+id/txt_AES" />
+
+    <EditText
+        android:id="@+id/Etxt_inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/background_light_txt"
+        android:hint="@string/encryptionTool_hint_input"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:textColorHint="@color/light_warm"
+        app:layout_constraintStart_toStartOf="@+id/txt_inputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txt_inputPassword" />
+
+    <ImageButton
+        android:id="@+id/btn_copy_inputPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/light_white"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="28dp"
+        android:src="@android:drawable/ic_menu_save"
+        app:layout_constraintEnd_toEndOf="@+id/Etxt_inputPassword"
+        app:layout_constraintTop_toTopOf="@+id/Etxt_inputPassword" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/txt_groupName_encryptionTool_passkey"
+        android:textColor="@color/light_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_inputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/Etxt_inputPassword" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/background_light_txt"
+        android:hint="@string/encryptionTool_hint_passkey"
+        android:textColorHint="@color/light_warm"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        android:background="@color/light_warm"
+        android:layout_marginEnd="24dp"
+        android:src="@android:drawable/ic_lock_idle_lock"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextText4"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText4"
+        app:layout_constraintTop_toTopOf="@+id/editTextText4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4">
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@color/light_white"
+            android:textStyle="bold"
+            android:text="加密" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_fullcolor_button"
+            android:src="@android:drawable/ic_popup_sync" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@color/light_white"
+        android:src="@android:drawable/ic_menu_save"
+        app:layout_constraintEnd_toEndOf="@+id/etxt_inputPassword"
+        app:layout_constraintTop_toTopOf="@+id/etxt_inputPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
